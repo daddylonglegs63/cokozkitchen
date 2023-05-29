@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cokoz Kitchen</title>
+  <style>
+    
+    .brand-name {
+        font-style: oblique;
+        text-align: center;
+        letter-spacing: 4px;
+        background-color: #925c1ba2;
+        font-weight: bold;
+        font-size: 28px;
+        color: black;
+        padding: 0px;
+        text-shadow: 2px 2px 4px rgb(91, 59, 12)
+
+    }
+
+    /* Here starts the first nevbar */
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #925c1ba2;
+    
+    }
+    .navbar {
+      background-color: #925c1ba2;
+      overflow: hidden;
+      font-style: oblique;
+      display: flex;
+      justify-content: space-around;
+    
+    }
+    .navbar a {
+      float: none;
+      display: inline-block;
+      color: #000000;
+      text-align: auto;
+      padding: 15px 100px;
+      text-decoration: none;
+      font-size: 25px;
+      border-bottom: 3px solid #000000;
+
+    }  
+    
+    
+    .navbar a:hover {
+      background-color: #000000;
+      color: #a37742;
+      
+    }
+    .navbar a.active {
+      background-color: #925c1ba2;
+      color: white;
+      
+      
+    }
+    /*  Here starts the next nevbar2  */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar2 {
+      background-color: #000000;
+      overflow: hidden;
+      font-style: oblique;
+      border-top: 5px solid #925c1ba2;
+      border-bottom: 5px solid #925c1ba2;
+      display: flex;
+      justify-content: center;
+
+    }
+    .navbar2 a {
+      float: left;
+      display: block;
+      color: #a37742;
+      text-align: auto;
+      padding: 20px 120px;
+      text-decoration: none;
+      font-size: 20px;
+      
+    }
+    .navbar2 a:hover {
+      background-color: #a37742;
+      color: #000000;
+      transform: scale(1.3);
+      
+      
+    }
+    .navbar2 a.active {
+      background-color: #ffffff;
+      color: white;
+    }
+           /* Main Heading OB&B */
+    .heading{
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        font-size: x-large;
+        font-style: oblique;
+
+    }
+    .heading2 {
+        text-align: center;
+        font-size: medium;
+    }
+    .subheading-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #000000;
+      font-style: oblique;
+      margin-top: 25px;
+    }
+          /* Main image transition */
+    .crop-container {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      height: 240px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .crop-container:hover {
+      transform: scale(1.3);
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+    }
+    .crop-container img {
+      transition: opacity 0.3s;
+    }
+    .crop-container:hover img {
+      opacity: 10;
+    }
+    .crop-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 0%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.3s;
+    }
+    .crop-container:hover::before {
+      background-color: rgba(0, 0, 0, 0.3);
+    }    
+
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="file:///Users/umarahmad/Cokoz%20Kitchen/CokozKitchen.html">Home</a>
+    <a href="https://www.instagram.com/cokozkitchen/">Social</a>
+    <a href="#">Contact Us</a>
+    <a href="#">About Us</a>
+    <a href="#">My Cart</a>
+  </div>
+
+  <div class="brand-name">
+    <h1>Cokoz 👩🏻‍🍳 Kitchen</h1>
+   </div>
+
+  <div class="navbar2">
+    <a href="#">Breakfast Breads</a>
+    <a href="#">Burger Buns</a>
+    <a href="#">Doughnuts</a>
+    <a href="#">Mince Breads</a>
+  </div>
+
+  <div class= "heading">
+    <h1><b>Organic Bread & Buns</b></h1>
+    <p>Freshly baked organic goodness for your daily indulgence 🍞🌾</p>
+  </div>
+ 
+    <div class="crop-container">
+        <img src="https://www.shutterstock.com/image-photo/panoramic-banner-rustic-bread-assortment-260nw-1332533804.jpg" alt=""><br>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWYT4k8pXDWtHNJINrj-FEduamXD8UuRIPA&usqp=CAU" alt="">
+    </div>
+
+<div class="subheading-container">
+    <div>
+        <h1>Buns</h1> 
+        <p>Organic multi-grain burger buns offer a wholesome and flavorful twist to your burger experience. These buns are crafted with care, combining a variety of organic grains such as wheat, oats, quinoa, and flax seeds. The result is a bun that is not only delicious but also packed with nutrients and dietary fiber. The combination of grains adds a delightful texture and nutty taste, enhancing the overall burger experience. These buns are a healthier alternative to traditional white buns, providing a balanced option for those seeking a nutritious and satisfying meal. Enjoy the goodness of organic multi-grain burger buns and elevate your burger game to a new level.</p>
+        <img src="" alt="">
+    </div>    
+    <div>
+        <h1>Breads</h1>
+        <p>Organic multi-grain breakfast bread is a delightful way to start your day on a nutritious note. Packed with a blend of organic whole grains like oats, barley, spelt, and flax seeds, this bread offers a wholesome and hearty breakfast option. Each slice is a delicious medley of flavors and textures, with the nuttiness of the grains complementing the softness of the bread. Rich in fiber, vitamins, and minerals, this organic breakfast bread provides sustained energy and helps you feel satisfied throughout the morning. Enjoy it toasted, topped with your favorite spreads, or as a base for a hearty breakfast sandwich.</p>
+        <img src="" alt="">
+    </div>
+    <div>
+        <h1>Doughnuts</h1>
+        <p>Doughnuts, the beloved sweet treats, are a delightful indulgence that brings joy to countless people. These round, fried or baked pastries are made from a soft and fluffy dough, typically enriched with ingredients like flour, sugar, eggs, and butter. They come in various flavors, from classic glazed and powdered sugar to creative variations like chocolate, jelly-filled, or maple bacon. The irresistible aroma and the satisfying texture of a perfectly fried or baked doughnut make them a popular choice for breakfast or as a delightful dessert. Whether enjoyed with a cup of coffee or shared with friends, doughnuts are a delightful treat that never fails to satisfy cravings.</p>
+        <img src="" alt="">
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
